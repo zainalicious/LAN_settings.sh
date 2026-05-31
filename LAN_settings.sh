@@ -100,7 +100,7 @@ edit_dhcp_range() {
 # Reboot the system
 reboot_system() {
     echo "Rebooting system..."
-    atcmd 'AT+CFUN=1,1'  # Ensure this command is correct for your system
+    reboot  # Ensure this command is correct for your system
     echo "System reboot initiated. Good luck."
 }
 # Main Menu
